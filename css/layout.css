@@ -207,8 +207,8 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 200px;
+   height: 200px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -257,6 +257,9 @@ ul#nav li.current a { color: #F06000; }
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
 }
+#resume h3 span{
+    text-align: center
+}
 
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
@@ -292,24 +295,25 @@ ul#nav li.current a { color: #F06000; }
 	text-align: left;
 }
 .bars .skills {
-  	margin-top: 36px;
+  	margin-top: 0px;
    list-style: none;
 }
 .bars li {
    position: relative;
-  	margin-bottom: 60px;
+  	margin-bottom: 10px;
   	background: #ccc;
   	height: 42px;
   	border-radius: 3px;
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
+   color: #FFFFFF;
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;
    position: relative;
-	top: -36px;
+	top: 11px;
+    padding: 11px;
 }
 .bar-expand {
    position: absolute;
@@ -318,94 +322,142 @@ ul#nav li.current a { color: #F06000; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+   background: #313131;
    display: inline-block;
-  	height: 42px;
+   height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
-
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+.python {
+    width: 90%;
+    -moz-animation: python 2s ease;
+    -webkit-animation: python 2s ease;
 }
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+@-moz-keyframes python {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
 }
-.wordpress {
-  	width: 50%;
+@-webkit-keyframes python {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+.matlab {
+    width: 80%;
+    -moz-animation: matlab 2s ease;
+    -webkit-animation: matlab 2s ease;
+}
+@-moz-keyframes matlab {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-webkit-keyframes matlab {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+.latex {
+  	width: 80%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
-.css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+@-moz-keyframes latex {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-webkit-keyframes latex {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+.adobe {
+    width: 50%;
+    -moz-animation: adobe 2s ease;
+    -webkit-animation: adobe 2s ease;
+}
+@-moz-keyframes adobe {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+@-webkit-keyframes adobe {
+  0%   { width: 0px;  }
+  100% { width: 50%;  }
+}
+.radiation_detection {
+    width: 90%;
+    -moz-animation: radiation_detection 2s ease;
+    -webkit-animation: radiation_detection 2s ease;
+}
+@-moz-keyframes radiation_detection {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes radiation_detection {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
 }
 .html5 {
-  	width: 80%;
+  	width: 40%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
-}
-
-@-moz-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
-}
 @-moz-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-
-@-webkit-keyframes photoshop {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes wordpress {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 40%;  }
 }
 @-webkit-keyframes html5 {
   0%   { width: 0px;  }
+  100% { width: 40%;  }
+}
+.css {
+    width: 30%;
+    -moz-animation: css 2s ease;
+    -webkit-animation: css 2s ease;
+}
+@-moz-keyframes css {
+  0%   { width: 0px;  }
+  100% { width: 30%;  }
+}
+@-webkit-keyframes css {
+  0%   { width: 0px;  }
+  100% { width: 30%;  }
+}
+.nuclear_engineering {
+    width: 85%;
+    -moz-animation: nuclear_engineering 2s ease;
+    -webkit-animation: nuclear_engineering 2s ease;
+}
+@-moz-keyframes nuclear_engineering {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-webkit-keyframes nuclear_engineering {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+.teaching {
+    width: 70%;
+    -moz-animation: teaching 2s ease;
+    -webkit-animation: teaching 2s ease;
+}
+@-moz-keyframes teaching {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+@-webkit-keyframes teaching {
+  0%   { width: 0px;  }
+  100% { width: 70%;  }
+}
+.writing {
+    width: 80%;
+    -moz-animation: writing 2s ease;
+    -webkit-animation: writing 2s ease;
+}
+@-moz-keyframes writing {
+  0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes jquery {
+@-webkit-keyframes writing {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 80%;  }
 }
-
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
 /* ------------------------------------------------------------------ */
@@ -630,7 +682,7 @@ call-to-action .button {
    color: #0D0D0D;
 }
 #call-to-action p span {
-	font-family: 'opensans-semibold', sans-serif; 
+	font-family: 'opensans-semibold', sans-serif;
 	color: #D8D8D8;
 }
 
@@ -654,7 +706,7 @@ call-to-action .button {
    padding-bottom: 66px;
 }
 #testimonials h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;   
+   font: 18px/24px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
