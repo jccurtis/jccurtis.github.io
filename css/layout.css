@@ -329,17 +329,30 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 .python {
-    width: 90%;
+    width: 95%;
     -moz-animation: python 2s ease;
     -webkit-animation: python 2s ease;
 }
 @-moz-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 95%;  }
 }
 @-webkit-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 95%;  }
+}
+.latex {
+  	width: 85%;
+  	-moz-animation: wordpress 2s ease;
+  	-webkit-animation: wordpress 2s ease;
+}
+@-moz-keyframes latex {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-webkit-keyframes latex {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
 }
 .matlab {
     width: 80%;
@@ -351,19 +364,6 @@ ul#nav li.current a { color: #F06000; }
   100% { width: 80%;  }
 }
 @-webkit-keyframes matlab {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-.latex {
-  	width: 80%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
-}
-@-moz-keyframes latex {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes latex {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
@@ -1055,4 +1055,3 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
-
